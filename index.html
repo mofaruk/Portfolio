@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tailwind Admin Starter Template : Tailwind Toolbox</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="author" content="name" />
+    <meta name="description" content="description here" />
+    <meta name="keywords" content="keywords,here" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" />
+    <link href="css/tailwind.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <div class="flex flex-col md:flex-row items-stretch">
+        <div class="bg-gray-800 shadow-xl fixed bottom-0 md:relative h-100 z-10 w-full md:w-48">
+            <div id="menu"
+                class="md:mt-12 md:w-48 md:fixed md:left-0 md:top-0 content-center md:content-center text-left justify-between">
+                <img src="images/logo.png" alt="logo" class="hidden md:block h-16 mx-auto p-2 rounded-full bg-gray-600 ring-4 ring-gray-700">
+                <ul class="list-reset flex flex-row md:flex-col py-0 md:py-3 px-1 md:px-2 text-center md:text-left">
+                    <li class="mr-3 flex-1">
+                        <a href="#intro"
+                            id="link-intro"
+                            class="menu-item block py-1 md:py-3 pl-1 align-middle text-gray-400 no-underline hover:text-white border-b-2 border-gray-800 hover:border-pink-500">
+                            <i class="far fa-handshake pr-0 md:pr-3"></i>
+                            <span class="pb-1 md:pb-0 text-xs md:text-base block md:inline-block">Intro</span>
+                        </a>
+                    </li>
+                    <li class="mr-3 flex-1">
+                        <a href="#skills"
+                            id="link-skills"
+                            class="menu-item block py-1 md:py-3 pl-1 align-middle text-gray-400 no-underline hover:text-white border-b-2 border-gray-800 hover:border-pink-500 active">
+                            <i class="fas fa-hammer pr-0 md:pr-3"></i>
+                            <span class="pb-1 md:pb-0 text-xs md:text-base block md:inline-block">Skills</span>
+                        </a>
+                    </li>
+                    <li class="mr-3 flex-1">
+                        <a href="#frameworks"
+                            id="link-frameworks"
+                            class="menu-item block py-1 md:py-3 pl-1 align-middle text-gray-400 no-underline hover:text-white border-b-2 border-gray-800 hover:border-pink-500">
+                            <i class="fas fa-hammer pr-0 md:pr-3"></i>
+                            <span class="pb-1 md:pb-0 text-xs md:text-base block md:inline-block">Additional Skills</span>
+                        </a>
+                    </li>
+                    <li class="mr-3 flex-1">
+                        <a href="#projects"
+                            id="link-projects"
+                            class="menu-item block py-1 md:py-3 pl-1 align-middle text-gray-400 no-underline hover:text-white border-b-2 border-gray-800 hover:border-pink-500">
+                            <i class="fas fa-tasks pr-0 md:pr-3"></i>
+                            <span class="pb-1 md:pb-0 text-xs md:text-base block md:inline-block">Projects</span>
+                        </a>
+                    </li>
+                    <li class="mr-3 flex-1">
+                        <a href="#experiences"
+                            id="link-experiences"
+                            class="menu-item block py-1 md:py-3 pl-1 align-middle text-gray-400 no-underline hover:text-white border-b-2 border-gray-800 hover:border-pink-500">
+                            <i class="fas fa-briefcase pr-0 md:pr-3"></i>
+                            <span class="pb-1 md:pb-0 text-xs md:text-base block md:inline-block">Experiences</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-content flex flex-col flex-1 bg-gray-100 pb-16 md:pb-0">
+            <!-- Intro -->
+            <section id="intro" class="scrollspy bg-gray-50 w-full p-5 flex flex-col justify-center items-center">
+
+                    <img src="images/profile-picture.jpg" alt=""
+                        class="rounded-full border-6 border-white shadow-md hover:shadow-xl ring-8 ring-gray-200" 
+                        width="150"/>
+                    <div class="text-center flex flex-col justify-between items-center space-y-6 py-6 md:p-10">
+                        <div class="relative">
+                            <h1 class="pt-1 text-5xl font-bold text-gray-800">
+                                Omar Faruk
+                            </h1>
+                            <h2 class="text-md">PHP Developer | DevOps Engineer</h2>
+                            <i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh
+                            <div class="my-4 space-x-3">
+                                <a href="pdf/resume.pdf" 
+                                    class="bg-gradient-to-r from-blue-500 to-purple-500 rounded-full shadow-lg font-bold text-white px-4 py-2"
+                                    target="_blank">
+                                    <i class="fas fa-download"></i> Resume
+                                </a>
+                                <!-- <a href="#" 
+                                    class="bg-gradient-to-r from-blue-500 to-green-500 rounded-full shadow-lg font-bold text-white px-4 py-2">
+                                    <i class="far fa-keyboard"></i> Blog
+                                </a> -->
+                            </div>
+                        </div>
+                        <div class="text-md leading-relaxed text-gray-500">
+                            a software developer expert in both backend, frontend and devops. prefer backend
+                        </div>
+                        <div class="inline-flex text-xl text-gray-600 space-x-6">
+                            <a href="https://github.com/mofaruk" target="_blank">
+                                <i class="fab fa-github hover:text-gray-800"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/mofaruk" target="_blank">
+                                <i class="fab fa-linkedin hover:text-blue-900"></i>
+                            </a>
+                            <a href="https://www.upwork.com/freelancers/~012e3ebfac5e6e82df" target="_blank">
+                                <svg class="h-6 fill-current hover:text-green-500" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.548-1.405-.002-2.543-1.143-2.545-2.548V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.439-5.439-5.439z"></path></svg>
+                            </a>
+                            <a href="skype:jeem.ruet?chat" target="_blank">
+                                <i class="fab fa-skype hover:text-blue-500"></i>
+                            </a>
+                            <a href="mailto:omar.faruk.ruet@gmail.com" target="_blank">
+                                <i class="fas fa-envelope-open-text hover:text-yellow-600"></i>
+                            </a>
+                            <a href="https://stackoverflow.com/users/8434677/md-omar-faruk" target="_blank">
+                                <i class="fab fa-stack-overflow hover:text-yellow-500"></i>
+                            </a>
+                        </div>
+                    </div>
+            </section>
+            <!-- Skills -->
+            <section id="skills" class="scrollspy bg-gray-100 p-10 text-gray-700 text-center">
+                <div class="text-center uppercase text-3xl font-bold text-gray-600 pb-10">
+                     Professional Skills
+                </div>
+                <div class="flex flex-col lg:w-1/2 mx-auto text-left space-y-2 text-lg">
+                    <div class="grid grid-cols-12">
+                        <i class="fas fa-project-diagram text-gray-600 col-span-1"></i> 
+                        <span class="col-span-5"> DS & Algo</span>
+                        <div class="space-x-2 text-right col-span-6">
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12">
+                        <i class="fas fa-network-wired text-gray-600 col-span-1"></i> 
+                        <span class="col-span-5"> OOP</span>
+                        <div class="space-x-2 text-right col-span-6">
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12">
+                        <i class="fab fa-php text-indigo-600 font-bold col-span-1"></i> 
+                        <span class="col-span-5"> PHP</span>
+                        <div class="space-x-2 text-right col-span-6">
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12">
+                        <i class="fab fa-laravel text-red-700 font-bold col-span-1"></i> 
+                        <span class="col-span-5"> Laravel</span>
+                        <div class="space-x-2 text-right col-span-6">
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12">
+                        <i class="fab fa-js-square text-yellow-500 col-span-1"></i> 
+                        <span class="col-span-5"> Javascript</span>
+                        <div class="space-x-2 text-right col-span-6">
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="far fa-dot-circle text-gray-600"></i>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12">
+                        <i class="fab fa-react text-blue-300 font-bold col-span-1"></i> 
+                        <span class="col-span-5"> React</span>
+                        <div class="space-x-2 text-right col-span-6">
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="far fa-dot-circle text-gray-600"></i>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12">
+                        <i class="fab fa-node text-green-600 col-span-1"></i> 
+                        <span class="col-span-5"> NodeJs</span>
+                        <div class="space-x-2 text-right col-span-6">
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="far fa-dot-circle text-gray-600"></i>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12">
+                        <i class="fab fa-vuejs text-green-400 font-bold col-span-1"></i> 
+                        <span class="col-span-5"> VueJs</span>
+                        <div class="space-x-2 text-right col-span-6">
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="far fa-dot-circle text-gray-600"></i>
+                            <i class="far fa-dot-circle text-gray-600"></i>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12">
+                        <i class="fas fa-database text-gray-600 col-span-1"></i> 
+                        <span class="col-span-5"> SQL</span>
+                        <div class="space-x-2 text-right col-span-6">
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="far fa-dot-circle text-gray-600"></i>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12">
+                        <i class="fab fa-linux text-gray-600 font-bold col-span-1"></i> 
+                        <span class="col-span-5"> Linux</span>
+                        <div class="space-x-2 text-right col-span-6">
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="far fa-dot-circle text-gray-600"></i>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12">
+                        <i class="fas fa-user-cog text-gray-600 col-span-1"></i> 
+                        <span class="col-span-5"> DevOps</span>
+                        <div class="space-x-2 text-right col-span-6">
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="fas fa-dot-circle text-gray-600"></i>
+                            <i class="far fa-dot-circle text-gray-600"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Additional Skills -->
+            <section id="frameworks" class="scrollspy bg-gray-50 p-10 text-gray-700">
+                <div class="text-center uppercase text-3xl font-bold pb-10">
+                     Additional Skills
+                </div>
+                <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 text-3xl gap-y-10 lg:px-24 text-center">
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/git-scm.svg" alt="Git" class="h-12 mx-auto">
+                        <span class="hidden md:block">Git</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/bash.svg" alt="Terminal" class="h-12 mx-auto">
+                        <span class="hidden md:block">Terminal</span>
+                    </div>
+                    <div class="text-sm bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/design-patterns.svg" alt="Design Patterns" class="h-12 mx-auto">
+                        <span class="hidden md:block">Design Patterns</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/jquery.svg" alt="Jquery" class="h-12 w-24 mx-auto">
+                        <span class="hidden md:block">Jquery</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/socketio.svg" alt="Socket.io" class="h-12 mx-auto">
+                        <span class="hidden md:block">Socket</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/expressjs.svg" alt="ExpressJs" class="h-12 w-24 mx-auto">
+                        <span class="hidden md:block">ExpressJs</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/typescript.svg" alt="Typescript" class="h-12 mx-auto">
+                        <span class="hidden md:block">Typescript</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/sequelizejs.svg" alt="Sequelize ORM" class="h-12 mx-auto">
+                        <span class="hidden md:block">SequelizeJS</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/redux.svg" alt="Redux" class="h-12 mx-auto">
+                        <span class="hidden md:block">Redux</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/html5.svg" alt="HTML" class="h-12 mx-auto">
+                        <span class="hidden md:block">HTML 5</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/css-3.svg" alt="CSS" class="h-12 mx-auto">
+                        <span class="hidden md:block">CSS 3</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/bootstrap.svg" alt="Bootstrap" class="h-12 mx-auto">
+                        <span class="hidden md:block">Bootstrap</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/tailwind.svg" alt="Tailwind" class="h-12 mx-auto">
+                        <span class="hidden md:block">Tailwind</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/sass-lang-ar21.svg" alt="Sass" class="h-12 mx-auto">
+                        <span class="hidden md:block">Sass</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/webpack-ar21.svg" alt="Webpack" class="h-12 mx-auto">
+                        <span class="hidden md:block">Webpack</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/nginx-ar21.svg" alt="NGINX" class="h-12 w-24 mx-auto">
+                        <span class="hidden md:block">NGINX</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/amazon_aws-ar21.svg" alt="AWS" class="h-12 mx-auto">
+                        <span class="hidden md:block">AWS</span>
+                    </div>
+                    <div class="text-sm bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/digitalocean.svg" alt="DigitalOcean" class="h-12 mx-auto">
+                        <span class="hidden md:block">Digital Ocean</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/docker-ar21.svg" alt="Docker" class="h-12 mx-auto">
+                        <span class="hidden md:block">Docker</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/kubernetes-ar21.svg" alt="Kubernetis" class="h-12 mx-auto">
+                        <span class="hidden md:block">Kubernetes</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/jenkins-ar21.svg" alt="Jenkins" class="h-12 mx-auto">
+                        <span class="hidden md:block">Jenkins</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/load-balancer.svg" alt="Load Balancing" class="h-12 mx-auto">
+                        <span class="hidden md:block">AWS ELB</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/npmjs-ar21.svg" alt="npm" class="h-12 mx-auto">
+                        <span class="hidden md:block">npm</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/composer.svg" alt="composer" class="h-12 mx-auto">
+                        <span class="hidden md:block">composer</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/phpunit.svg" alt="unit testing" class="h-12 w-24 mx-auto">
+                        <span class="hidden md:block">PHP Unit</span>
+                    </div>
+                    <!-- <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/php.svg" alt="REST API" class="h-12 mx-auto">
+                    <span class="hidden md:block"></div> --></span>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/jwt.svg" alt="JWT" class="h-12 mx-auto">
+                        <span class="hidden md:block">JWT</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/oauth.svg" alt="oauth" class="h-12 mx-auto">
+                        <span class="hidden md:block">oAuth</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/graphql-ar21.svg" alt="GraphQl" class="h-12 mx-auto">
+                        <span class="hidden md:block">GraphQl</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/webhooks.svg" alt="Webhooks" class="h-12 mx-auto">
+                        <span class="hidden md:block">Webhooks</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/xml.svg" alt="XML" class="h-12 mx-auto">
+                        <span class="hidden md:block">XML</span>
+                    </div>
+                    <!-- <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/php.svg" alt="SOAP" class="h-12 mx-auto">
+                        <span class="hidden md:block">soap</span>
+                    </div> -->
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/ionicframework-ar21.svg" alt="Ionic" class="h-12 mx-auto">
+                        <span class="hidden md:block">Ionic</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/tensorflow-ar21.svg" alt="tensorflow" class="h-12 mx-auto">
+                        <span class="hidden md:block">Tensorflow</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/python-ar21.svg" alt="Python" class="h-12 mx-auto">
+                        <span class="hidden md:block">Python</span>
+                    </div>
+                    <!-- <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="" alt="C++" class="h-12 mx-auto">
+                    </div> -->
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/wordpress-ar21.svg" alt="WordPress" class="h-12 mx-auto">
+                        <span class="hidden md:block">WordPress</span>
+                    </div>
+                    <div class="text-xl bg-white w-11/12 md:w-4/5 p-2 rounded-xl shadow-md hover:shadow-lg">
+                        <img src="images/icons/photoshop-cc.svg" alt="Photoshop" class="h-12 mx-auto">
+                        <span class="hidden md:block">Photoshop</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section id="projects" class="scrollspy bg-gray-100 p-10 text-gray-700">
+                <div class="text-center uppercase text-3xl font-bold text-gray-600 pb-10">
+                    Projects
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 lg:px-20">
+                    <div class="text-left bg-white m-4 rounded-2xl shadow-md hover:shadow-xl">
+                        <div class="bg-gradient-to-tl from-blue-300  to-purple-300 h-24 p-4 rounded-t-lg text-center text-2xl text-gray-600 font-bold">
+                            <h3 class="text-2xl">JoyFood</h3>
+                            <p class="text-sm text-gray-500">
+                                <a href="https://food.joyhub.com" target="_blank">
+                                    <i class="fas fa-external-link-alt text-blue-400"></i>
+                                    food.joyhub.com
+                                </a>
+                            </p>
+                        </div>
+                        <div class="rounded-b-xl pb-4 px-4">
+                            <p class="my-5 text-gray-500">
+                                JoyFood is food ordering application. User order through mobile application.
+                            </p>
+                            <div class="flex flex-row flex-wrap justify-between items-center">
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                    Laravel
+                                </div>
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                    Ionic/React
+                                </div>
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                    MySQL
+                                </div>
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                    Firebase
+                                </div>
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                    Git
+                                </div>
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                    Android
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left bg-white m-4 rounded-2xl shadow-md hover:shadow-xl">
+                        <div class="bg-gradient-to-tl from-blue-300  to-purple-300 h-24 p-4 rounded-t-lg text-center text-2xl text-gray-600 font-bold">
+                            <h3 class="text-2xl">Compliance System</h3>
+                            <p class="text-sm text-gray-500">
+                                <a href="https://paytop.com" target="_blank">
+                                    <i class="fas fa-external-link-alt text-blue-400"></i>
+                                    paytop.com
+                                </a>
+                            </p>
+                        </div>
+                        <div class="rounded-b-xl pb-4 px-4">
+                            <p class="my-5 text-gray-500">
+                                Complinace management system checks customers previous compliance issue and block transactions
+                                if some critical issue and fraud activities are found.
+                            </p>
+                            <div class="flex flex-row flex-wrap justify-between items-center">
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                    Laravel
+                                </div>
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                    Package Devlopment
+                                </div>
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                    SOAP (3rd Party)
+                                </div>
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                    REST APIs
+                                </div>
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                    Webhooks
+                                </div>
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                    Payment Processing System
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left bg-white m-4 rounded-2xl shadow-md hover:shadow-xl">
+                        <div class="bg-gradient-to-tl from-blue-300  to-purple-300 h-24 p-4 rounded-t-lg text-center text-2xl text-gray-600 font-bold">
+                            <h3 class="text-2xl">Live Chat</h3>
+                            <p class="text-sm text-gray-500">
+                                <a href="#" target="_blank">
+                                    <i class="fas fa-external-link-alt text-blue-400"></i>
+                                    (integrated with mobile application)
+                                </a>
+                            </p>
+                        </div>
+                        <div class="rounded-b-xl pb-4 px-4">
+                            <p class="my-5 text-gray-500">
+                                Live chat for customer support.
+                            </p>
+                            <div class="flex flex-row flex-wrap justify-between items-center">
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                Node.js
+                                </div>
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                    Express.js
+                                </div>
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                    Web Sockets
+                                </div>
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                    socket.io
+                                </div>
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                    REST APIs
+                                </div>
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                    Sequelize ORM
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left bg-white m-4 rounded-2xl shadow-md hover:shadow-xl">
+                        <div class="bg-gradient-to-tl from-blue-300  to-purple-300 h-24 p-4 rounded-t-lg text-center text-2xl text-gray-600 font-bold">
+                            <h3 class="text-2xl">MetroMail</h3>
+                            <p class="text-sm text-gray-500">
+                                <a href="#" target="_blank">
+                                    <i class="fas fa-external-link-alt text-blue-400"></i>
+                                    mail.metrosemi.com
+                                </a>
+                            </p>
+                        </div>
+                        <div class="rounded-b-xl pb-4 px-4">
+                            <p class="my-5 text-gray-500">
+                                MetroMail is an email marketing tool for metrosemi.
+                            </p>
+                            <div class="flex flex-row flex-wrap justify-between items-center">
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                Laravel
+                                </div>
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                    Jquery
+                                </div>
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                    MySQL
+                                </div>
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                    Bootstrap
+                                </div>
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                    SendGrid
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left bg-white m-4 rounded-2xl shadow-md hover:shadow-xl">
+                        <div class="bg-gradient-to-tl from-blue-300  to-purple-300 h-24 p-4 rounded-t-lg text-center text-2xl text-gray-600 font-bold">
+                            <h3 class="text-2xl">FSM Transcriber</h3>
+                            <p class="text-xs text-gray-500">
+                                <a href="http://frontiersemi.com/admin/transcriber" target="_blank">
+                                    <i class="fas fa-external-link-alt text-blue-400"></i>
+                                    frontiersemi.com
+                                </a>
+                            </p>
+                        </div>
+                        <div class="rounded-b-xl pb-4 px-4">
+                            <p class="my-5 text-gray-500">
+                                FSM Transriber was developed using GCP Speech to Text Api, it can convert speech(audio/video)
+                                into text and detect multiple person.
+                            </p>
+                            <div class="flex flex-row flex-wrap justify-between items-center">
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                Laravel
+                                </div>
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                    Jquery
+                                </div>
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                    MySQL
+                                </div>
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                    Bootstrap
+                                </div>
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                    GCP
+                                </div>
+                                <div class="text-xs font-bold lowercase px-3 m-1 py-1 bg-blue-100 text-blue-400 rounded-full">
+                                    Speech to Text
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Expriences -->
+            <section id="experiences" class="scrollspy bg-gray-50 p-10 text-gray-700">
+                <div class="text-center uppercase text-3xl font-bold text-gray-600 pb-10">
+                    Experiences
+                </div>
+                <div class="md:flex justify-center text-center mx-auto">
+                    <div class="md:w-2/3">
+
+                        <!-- Experience -->
+                        <div class="relative text-left">
+                            <div class="flex items-center">
+                                <div class="hidden md:block w-25">
+                                    <div class="md:flex flex-col items-end text-xs">
+                                        <div class="font-bold uppercase">Jan 2020</div>
+                                        <div>-</div>
+                                        <div class="font-bold uppercase">Feb 2021</div>
+                                    </div>
+                                </div>
+                            
+                                <div class="relative ml-10 border-l-4 border-gray-500 pl-5 w-75">
+                                    
+                                    <i class="fas fa-circle  absolute -left-3 -top-2"></i>
+                                    
+                                    <div class="font-bold">Software Developer</div>
+                                    <div class="italic md:mb-4">JoyFood</div>
+                                    <div class="mb-4 mt-2 md:hidden">
+                                        <div class="text-sm font-bold uppercase">Feb 2021 - Today</div>
+                                    </div>
+                                    <div class="mb-10">
+                                        Developed APIs for mobile application.<br>
+                                        Developed and maintained mobile application.<br>
+                                        Conﬁgured and maintained cloud server.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative text-left">
+                            <div class="flex items-center">
+                                <div class="hidden md:block w-25">
+                                    <div class="md:flex flex-col items-end text-xs">
+                                        <div class="font-bold uppercase">Jan 2020</div>
+                                        <div>-</div>
+                                        <div class="font-bold uppercase">Feb 2021</div>
+                                    </div>
+                                </div>
+                            
+                                <div class="relative ml-10 border-l-4 border-gray-500 pl-5 w-75">
+                                    
+                                    <i class="fas fa-circle  absolute -left-3 -top-2"></i>
+                                    
+                                    <div class="font-bold">Software Developer</div>
+                                    <div class="italic md:mb-4">Topup Ltd</div>
+                                    <div class="mb-4 mt-2 md:hidden">
+                                        <div class="text-sm font-bold uppercase">May 2020 - Jan 2021</div>
+                                    </div>
+                                    <div class="mb-10">
+                                        Developed APIs for money transfer app using Laravel<br>
+                                        Developed real-time chat using web sockets using socket.io and NodeJs<br>
+                                        Developed Laravel package for user compliance syste<br>
+                                        Maintained the cloud server (AWS)<br>
+                                        Managed secure web-hooks
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative text-left">
+                            <div class="flex items-center">
+                                <div class="hidden md:block w-25">
+                                    <div class="md:flex flex-col items-end text-xs">
+                                        <div class="font-bold uppercase">Apr 2018</div>
+                                        <div>-</div>
+                                        <div class="font-bold uppercase">Jan 2020</div>
+                                    </div>
+                                </div>
+                            
+                                <div class="relative ml-10 border-l-4 border-gray-500 pl-5 w-75">
+                                    
+                                    <i class="fas fa-circle  absolute -left-3 -top-2"></i>
+                                    <i class="fas fa-circle  absolute -left-3 -bottom-2"></i>
+                                    
+                                    <div class="font-bold">Software Developer</div>
+                                    <div class="italic md:mb-4">Frontier Semiconductor</div>
+                                    <div class="mb-4 mt-2 md:hidden">
+                                        <div class="text-sm font-bold uppercase">Apr 2018 - Jan 2020</div>
+                                    </div>
+                                    <div class="mb-10">
+                                        Upgraded and maintained the company website <br>
+                                        Developed a transcriber application web using Google Cloud Platform <br>
+                                        Developed Email Marketing tool for sister company (Metrosemi)<br> 
+                                        Researched on detecting fault on silicon wafers using machine learning algorithms
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <section id="footer" class="w-full bg-gray-200">
+                <div class="p-5 mx-auto text-md text-gray-500 text-center">
+                    Designed and developed by <span class="font-bold">Omar Faruk</span>
+                    <br> 
+                    <a href="https://github.com/mofaruk/portfolio">
+                        Fork <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="js/simple-scrollspy.min.js"></script>
+    <script>
+        window.onload = function () {
+            scrollSpy('#menu', {
+                sectionClass: '.scrollspy',
+                menuActiveTarget: '.menu-item',
+                activeClass: 'border-blue-500',
+                offset: 200,
+            })
+        }
+    </script>
+</body>
+
+</html>
